@@ -32,7 +32,7 @@ public class BirthdayReminder {
 			System.out.println("My birthday is on May 26");
 		}
 		else if (birthday.equals("sister")) {
-			JOptionPane.showConfirmDialog( "Sorry I don't know that person's birthday!");
+			JOptionPane.showMessageDialog(null,"Sorry I don't know that person's birthday!");
 		}
 		// 4. if user asked for "mom"
 			//print mom's birthday
