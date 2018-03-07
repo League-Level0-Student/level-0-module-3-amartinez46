@@ -30,6 +30,14 @@ if (cat<3&&cat>0) {
 	
 }
 		// 5. If they have 0 cats, show them a video of A Frog Sitting on a Bench Like a Human
+if (cat==0) {
+	playVideo("https://www.youtube.com/watch?v=W_juM14WHNQ");
+	
+	
+	
+	
+}	
+	
 	}	
 	
 
