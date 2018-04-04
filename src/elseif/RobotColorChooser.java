@@ -17,21 +17,30 @@ public class RobotColorChooser {
 		//1. Create a new Robot
 		Robot r2d2= new Robot();
 		//3. Ask the user what color they would like the robot to draw
-String pen= JOptionPane.showInputDialog(null, "What color would you like?");
+for (int i = 0; i <6 ; i++) {
+	String pen= JOptionPane.showInputDialog(null, "What color would you like?");
 		//5. Use an if/else statement to set the pen color that the user requested
-if (pen.equals("blue")) {
+ 
+	if (pen.equals("pink")) {
+		r2d2.setPenColor(Color.pink);
+	}
+	else if (pen.equals("blue")) {
 	r2d2.setPenColor(Color.blue);
 }
-if (pen.equals("pink")) {
+	else if (pen.equals("pink")) {
 	r2d2.setPenColor(Color.pink);
 }
-if (pen.equals("black")) {
+	else if (pen.equals("black")) {
 	r2d2.setPenColor(Color.black);
 }        //6. If the user doesn’t enter anything, choose a random color
-if (pen.equals("blue")) {
-	r2d2.setPenColor(Color.blue);
+	else if (pen.equals("magenta")) {
+	r2d2.setPenColor(Color.MAGENTA);
 }
-        //7. Put a loop around your code so that you keep asking the user for more colors & drawing them
+	else {
+r2d2.setRandomPenColor();
+	}
+	
+	//7. Put a loop around your code so that you keep asking the user for more colors & drawing them
 	
 		//4. Set the pen width to 10
 		r2d2.setPenWidth(10); 
@@ -46,4 +55,5 @@ r2d2.penDown();
 	r2d2.move(110);
 	
 	}
+}
 }
