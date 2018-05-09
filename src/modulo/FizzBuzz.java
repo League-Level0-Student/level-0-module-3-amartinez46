@@ -3,6 +3,8 @@
 
 package modulo;
 
+import javax.swing.JOptionPane;
+import javax.swing.text.StyledEditorKit.ForegroundAction;
 
 /**
 * Fizz Buzz
@@ -27,5 +29,30 @@ package modulo;
 
 public class FizzBuzz {
 
+	public static void main(String[] args) {
+		
+	
+
+for (int i = 1; i <=20 ; i++) {
+	System.out.println(i);
+if (i%3=0) {
+	JOptionPane.showInputDialog(null,"fizz");
+}
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
 }
 
