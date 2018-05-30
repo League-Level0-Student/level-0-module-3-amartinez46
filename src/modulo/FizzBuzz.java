@@ -34,22 +34,24 @@ public class FizzBuzz {
 	
 
 for (int i = 1; i <=20 ; i++) {
-	System.out.println(i);
+	
 if (i%3==0) {
-	JOptionPane.showMessageDialog(null,"fizz");
+	System.out.print("fizz");
 }
 
 
-	System.out.println(i);
+	
 if (i%5==0) {
-	JOptionPane.showMessageDialog(null,"buzz");
+	System.out.print("buzz");
 
 }
 
-	System.out.println(i);
-if (i%3==5) {
-	System.out.println("fizzbuzz");
+if (i%3!=0&&i%5!=0) {
+	System.out.print(i);
 }
+
+System.out.print(" ");
+
 
 }
 	}
